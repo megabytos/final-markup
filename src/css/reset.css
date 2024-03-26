@@ -1,33 +1,11 @@
 /* Reset styles */
-body {
-  font-family: var(--primary-font);
-  color: var(--primary-color);
-  font-size: 18px;
-  line-height: 1.66667;
-  font-weight: 400;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
-  color: var(--heading-color);
   margin: 0;
-}
-
-h1 {
-  font-size: 38px;
-  line-height: 1.05263;
-}
-
-h2 {
-  font-size: 32px;
-  line-height: 1.125;
-  letter-spacing: -0.02em;
-  text-align: center;
 }
 
 p {
@@ -57,89 +35,5 @@ img {
 
 button {
   text-align: center;
-  cursor: pointer;  
-}
-
-section button {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: var(--secondary-color);
-  background-color: var(--button-background);
-  border-radius: 12px;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-header {
-  padding: 20px 0;
-}
-
-footer {
-  padding: 40px 0 20px 0;
-}
-
-section {
-  padding: 0 0 80px 0;
-}
-
-.hero-section {
-  padding-top: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
-  footer {
-    padding: 32px 0 16px 0;
-  }
-
-  section {
-    padding: 0 0 100px 0;
-  }
-
-  .hero-section {
-    padding-top: 32px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 128px;
-  }
-
-  footer {
-    padding: 64px 0 24px 0;
-  }
-
-  section {
-    padding: 0 0 150px 0;
-  }
-
-  .hero-section {
-    padding-top: 16px;
-    padding-bottom: 96px;
-  }
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  cursor: pointer;
 }
