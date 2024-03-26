@@ -4,82 +4,131 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/final-markup/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
+    <title>English Excellence</title>
     <script type="module" crossorigin src="/final-markup/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/final-markup/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/final-markup/assets/index-4e4c8b66.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/final-markup/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <header>
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <nav class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-toggle js-close-menu">
+        <svg width="20" height="20">
+          <use href=""></use>
+        </svg>
+      </button>
+      <a class="logo" href="./index.html">english<span>excellence</span>.</a>
+      <ul class="header-nav-list">
+        <li><a class="header-nav-link" href="#about">About us</a></li>
+        <li><a class="header-nav-link" href="#lessons">Our lessons</a></li>
+        <li><a class="header-nav-link" href="#teachers">Teachers</a></li>
+        <li><a class="header-nav-link" href="#reviews">Reviews</a></li>
+        <li><a class="header-nav-link" href="#application">Contact us</a></li>
+      </ul>
+      <ul class="social-media-list">
+        <li>
+          <a class="social-media-link" href="#" target="_blank">
+            <svg width="44" height="44">
+              <use href=""></use>
+            </svg>
+          </a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li>
+          <a class="social-media-link" href="#" target="_blank">
+            <svg width="44" height="44">
+              <use href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-media-link" href="#" target="_blank">
+            <svg width="44" height="44">
+              <use href=""></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </div>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="32" height="32">
+          <use href=""></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/final-markup/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <main>
+      <section class="hero-section">
+  <div class="container">
+    <h1>Discover the joy of learning English with us!</h1>
+    <button class="hero-button" type="button">Leave an application</button>
   </div>
 </section>
 
+      <section class="about-section" id="about">
+  <div class="container">
+    <h2>About Us</h2>
+  </div>
+</section>
 
+      <section class="lessons-section" id="lessons">
+  <div class="container">
+    <h2>Our lessons</h2>
+  </div>
+</section>
+      <section class="proposal-section">
+  <div class="container">
+    <h2>Master the Language with Our English Package!</h2>
+  </div>
+</section>
+      <section class="teachers-section" id="teachers">
+  <div class="container">
+    <h2>Meet our teachers</h2>
+  </div>
+</section>
+      <section class="application-section" id="application">
+  <div class="container">
+    <h2>Leave an application</h2>
+  </div>
+</section>
+      <section class="reviews-section" id="reviews">
+  <div class="container">
+    <h2>What our students say</h2>
+  </div>
+</section>
+    </main>
+    <footer>
+  <div class="container">
+    
+  </div>
+</footer>
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-toggle js-close-menu">
+        <svg class="modal-close-button-cross" width="8" height="8">
+          <use href="/final-markup/assets/icons-6864c693.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
