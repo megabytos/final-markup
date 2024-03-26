@@ -8,15 +8,19 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  counter-reset: list-counter;
 }
 
 .about-us-item {
   background-color: var(--secondary-bg-color);
   padding: 32px;
   border-radius: 16px;
+  list-style: none;
+  counter-increment: list-counter;
 }
 
-.about-us-item-number {
+.about-us-item::before {
+  content: counter(list-counter, decimal-leading-zero);
   color: var(--substrate-color);
   font-size: 28px;
   font-style: normal;
