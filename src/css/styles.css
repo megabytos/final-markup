@@ -1,34 +1,12 @@
+@import url('./variables.css');
 @import url('./reset.css');
 @import url('./main.css');
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./hero.css');
-@import url('./about.css');
+@import url('./about-us.css');
 @import url('./lessons.css');
 @import url('./proposal.css');
 @import url('./teachers.css');
 @import url('./application.css');
 @import url('./reviews.css');
-
-:root {
-  --primary-font: 'Manrope', sans-serif;
-  --heading-font: 'Manrope', sans-serif;
-  --primary-color: rgba(18, 20, 23, 0.5);
-  --heading-color: #121417;
-  --secondary-color: #fff;
-  --button-foreground: #fff;
-  --button-background: #4dc274;
-  --substrate-color: #4dc274;
-  --border-color: #4dc274;
-  --link-color: #4dc274;
-  --active-color: #38ae5f;
-  --primary-accent-color: #bee8cc;
-  --secondary-accent-color: #d4fde1;  
-  --overlay-color: rgba(18, 20, 23, 0.4);
-  --primary-bg-color: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
-  --secondary-bg-color: #f3f5f6;
-  --text-color: rgba(255, 255, 255, 0.5);
-  --secondary-text-color: rgba(255, 255, 255, 0.7);
-  --footer-color: rgba(255, 255, 255, 0.6);
-}
-
