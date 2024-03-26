@@ -1,17 +1,15 @@
 /* reviews styles */
 .reviews-title {
     line-height: 1.13;
-    letter-spacing: -0.64px;
-    margin-bottom: 16px;
+}
+
+.section-title-extra::after {
+    z-index: -1;
 }
 
 .reviews-info {
-    text-align: center;
-    font-size: 14px;
     line-height: 1.71;
     max-width: 100%;
-    color: var(--primary-color);
-    margin-bottom: 40px;
 }
 
 
