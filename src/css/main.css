@@ -1,109 +1,104 @@
 body {
-    font-family: var(--primary-font);
-    color: var(--primary-color);
-    font-size: 18px;
-    line-height: 1.66667;
-    font-weight: 400;
-}
-h1 {    
-    font-size: 38px;
-    line-height: 1.05263;
-}
-
-.about h2,
-.lesson h2,
-.application h2,
-.propodsal h2,
-.reviews h2,
-.teachers h2 {
-    font-family: var(--heading-font);
-    color: var(--heading-color);
-    font-size: 32px;
-    line-height: 1.125;
-    letter-spacing: -0.02em;
-    text-align: center;
-}
-
-section button {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.55556;
-    color: var(--secondary-color);
-    background-color: var(--button-background);
-    border-radius: 12px;
-}
-
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 0 20px;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 1.66667;
+  font-weight: 400;
 }
 
 header {
-    padding: 20px 0;
+  padding-top: 20px;
 }
 
 footer {
-    padding: 40px 0 20px 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 section {
-    padding: 0 0 80px 0;
-}
-
-.hero-section {
-    padding-top: 8px;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
-    footer {
-        padding: 32px 0 16px 0;
-    }
-
-    section {
-        padding: 0 0 100px 0;
-    }
-
-    .hero-section {
-        padding-top: 32px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        padding: 0 128px;
-    }
-
-    footer {
-        padding: 64px 0 24px 0;
-    }
-
-    section {
-        padding: 0 0 150px 0;
-    }
-
-    .hero-section {
-        padding-top: 16px;
-        padding-bottom: 96px;
-    }
+  padding-bottom: 80px;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-title {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.64px;
+  margin-bottom: 16px;
+}
+
+.section-description {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  section {
+    padding-bottom: 100px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section-description {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    padding-top: 64px;
+    padding-bottom: 24px;
+  }
+
+  section {
+    padding-bottom: 150px;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding-left: 128px;
+    padding-right: 128px;
+  }
 }
