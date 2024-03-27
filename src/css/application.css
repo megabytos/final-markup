@@ -151,6 +151,7 @@ input[type="radio"]:checked + .radio-label:after {
 .application-image {
   border-radius: 30px;
   background-color: var(--substrate-color);
+  display: none;
   overflow: hidden;
   width: 492px;
 }
@@ -232,12 +233,6 @@ input[type="radio"]:checked + .radio-label:after {
   }
 }
 
-@media screen and (max-width: 1279px) {
-  .application-image {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .application {
     align-items: stretch;
@@ -246,5 +241,9 @@ input[type="radio"]:checked + .radio-label:after {
     margin: 0 auto;
     padding: 0 64px 150px 64px;
     width: 1152px;
+  }
+
+  .application-image {
+    display: block;
   }
 }
