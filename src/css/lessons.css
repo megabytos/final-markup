@@ -1,1 +1,141 @@
 /* lessons styles */
+.section-description {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-description {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-description {
+    padding: 0 180px;
+  }
+}
+
+.tariff-cards {
+  display: grid;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tariff-cards {
+    grid-template-columns: repeat(2, 336px);
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .tariff-cards {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.tariff-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  padding: 32px;
+  border-radius: 16px;
+  counter-increment: list-counter;
+  width: 336px;
+  height: 400px;
+}
+
+.tariff-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--heading-color);
+}
+
+.body-strong {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.body-tiny {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.card-button {
+  margin-top: 16px;
+  width: 256px;
+  height: 60px;
+  border: 2px solid transparent;
+  border-color: var(--border-color);
+  border-radius: 12px;
+  background-color: var(--button-background);
+  color: var(--button-foreground);
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 295px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-button {
+    width: 304px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card-button {
+    border-radius: 12px;
+    width: 256px;
+    height: 60px;
+  }
+}
+.card-button:hover,
+.card-button:focus {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+}
+
+/* Even cards */
+
+.tariff-card-item:nth-child(even) {
+  background-color: var(--substrate-color);
+}
+
+.tariff-card-item:nth-child(even) .tariff-name,
+.tariff-card-item:nth-child(even) .body-strong,
+.tariff-card-item:nth-child(even) .body-tiny {
+  color: var(--secondary-color);
+}
+
+.tariff-card-item:nth-child(even) .card-button {
+  border: 1px solid var(--button-foreground);
+}
+.tariff-card-item:nth-child(even) .card-button:hover,
+.card-button:focus {
+  background-color: var(--button-foreground);
+  color: var(--substrate-color);
+}
