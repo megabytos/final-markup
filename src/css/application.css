@@ -1,7 +1,5 @@
-.application-section .section-description {
-  max-width: 709px;
-  margin-left: auto;
-  margin-right: auto;
+.application {
+  padding-bottom: 80px;
 }
 
 .application-form {
@@ -26,6 +24,7 @@
   border-radius: 12px;
   border: 1px solid var(--form-border);
   font-family: 'Manrope', sans-serif;
+  font-size: 14px;
   padding: 16px 18px;
   width: 100%;
 }
@@ -33,6 +32,10 @@
 .form-input:focus {
   border-color: var(--border-color);
   outline: none;
+}
+
+input.form-input {
+  height: 50px;
 }
 
 textarea.form-input {
@@ -47,11 +50,17 @@ textarea.form-input {
 
 .teacher .title {
   color: var(--heading-color);
+  font-size: 18px;
   font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .radiobuttons {
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+  margin-top: 2px;
 }
 
 .option {
@@ -71,7 +80,9 @@ input[type="radio"] {
   border: 2px solid var(--radio-border);
   border-radius: 50%;
   cursor: pointer;
+  height: 18px;
   position: relative;
+  width: 18px;
 }
 
 .radio-label:after {
@@ -97,6 +108,7 @@ input[type="radio"]:checked + .radio-label:after {
 
 .radiobutton-label {
   cursor: pointer;
+  font-size: 14px;
 }
 
 .form-submit {
@@ -107,7 +119,9 @@ input[type="radio"]:checked + .radio-label:after {
   color: var(--secondary-color);
   cursor: pointer;
   display: flex;
+  font-size: 14px;
   font-weight: 700;
+  height: 50px;
   justify-content: center;
   margin-bottom: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -121,6 +135,7 @@ input[type="radio"]:checked + .radio-label:after {
 
 .application .message {
   color: var(--primary-color);
+  font-size: 12px;
   margin: 0;
 }
 
@@ -164,50 +179,6 @@ input[type="radio"]:checked + .radio-label:after {
   line-height: 1.2;
   margin-bottom: 8px;
   text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .application {
-    padding-bottom: 80px;
-  }
-
-  .form-input {
-    font-size: 14px;
-  }
-
-  input.form-input {
-    height: 50px;
-  }
-
-  .teacher .title {
-    font-size: 18px;
-    margin-bottom: 14px;
-  }
-
-  .radiobuttons {
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 40px;
-    margin-top: 2px;
-  }
-
-  .radio-label {
-    height: 18px;
-    width: 18px;
-  }
-
-  .radiobutton-label {
-    font-size: 14px;
-  }
-
-  .form-submit {
-    font-size: 14px;
-    height: 50px;
-  }
-
-  .application .message {
-    font-size: 12px;
-  }
 }
 
 @media screen and (min-width: 768px) {
