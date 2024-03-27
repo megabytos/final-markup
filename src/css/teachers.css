@@ -1,5 +1,5 @@
 /* teachers styles */
-.tch-text {
+.teacher-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,24 +7,7 @@
   margin-bottom: 40px;
 }
 
-.tch-header {
-  color: var(--heading-color);
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 112.5%;
-  letter-spacing: -0.64px;
-}
-
-.tch-desc {
-  color: var(--primary-color);
-  text-align: center;
-  line-height: 171.429%;
-  font-size: 14px;
-  margin-bottom: 40px;
-}
-
-.tch-card {
+.teacher-card {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +16,7 @@
   margin-bottom: 40px;
 }
 
-.tch-card:last-child {
+.teacher-card:last-child {
   margin-bottom: 0;
 }
 
@@ -45,7 +28,7 @@
   flex-shrink: 0;
 }
 
-.tch-card-title {
+.teacher-card-title {
   color: var(--heading-color);
   text-align: center;
   font-size: 20px;
@@ -54,7 +37,7 @@
   letter-spacing: -0.4px;
 }
 
-.tch-card-desc {
+.teacher-card-desc {
   color: var(--primary-color);
   text-align: center;
   font-size: 14px;
@@ -63,49 +46,29 @@
 }
 
 @media screen and (min-width: 768px) {
-  .tch-header {
-    line-height: 120%;
-    letter-spacing: -0.8px;
-  }
-
-  .tch-text {
+  .teacher-text {
     margin-bottom: 64px;
   }
 
-  .tch-desc {
-    font-size: 18px;
-    line-height: 166.667%;
-  }
-
-  .tch-list {
+  .teacher-list {
     display: flex;
     align-items: flex-start;
     gap: 32px;
     flex-wrap: wrap;
   }
 
-  .tch-card {
+  .teacher-card {
     width: calc((100% - 1 * 32px) / 2);
     margin-bottom: 0;
   }
 
-  .tch-card-desc {
+  .teacher-card-desc {
     font-size: 16px;
     line-height: 150%;
   }
 
   @media screen and (min-width: 1280px) {
-    .tch-header {
-      font-size: 40px;
-    }
-
-    .tch-desc {
-      max-width: 709px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .tch-card {
+    .teacher-card {
       width: calc((100% - 3 * 32px) / 4);
       margin-bottom: 0;
     }
