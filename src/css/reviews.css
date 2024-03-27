@@ -4,6 +4,7 @@
 }
 
 .section-title-extra::after {
+    height: 12px;
     z-index: -1;
 }
 
