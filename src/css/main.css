@@ -49,6 +49,28 @@ section {
   margin-bottom: 16px;
 }
 
+.section-title-extra {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-extra span {
+  z-index: 2;
+  position: relative;
+}
+
+.section-title-extra:after {
+  height: 20px;
+  content: '';
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  border-radius: 8px;
+  background-color: var(--primary-accent-color);
+  position: absolute;
+}
+
 .section-description {
   color: var(--primary-color);
   text-align: center;
