@@ -67,6 +67,11 @@
     overflow-y: auto;
 }
 
+.reviewer-swiper {
+    --swiper-navigation-size: 24px;
+    --swiper-theme-color: var(--border-color);
+}
+
 /* #region -----tablet-------- */
 
 @media only screen and (min-width: 768px) {
@@ -85,6 +90,7 @@
     .reviews-list {
         display: flex;
         gap: 32px;
+        justify-content: start;
     }
 
     .reviews-items {
