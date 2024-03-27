@@ -64,7 +64,7 @@ section {
   content: '';
   width: 100%;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
   display: block;
   border-radius: 8px;
   background-color: var(--primary-accent-color);
