@@ -17,7 +17,7 @@
     
     <title>English Excellence</title>
     <script type="module" crossorigin src="/final-markup/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/final-markup/assets/index-f7bebb5b.css">
+    <link rel="stylesheet" href="/final-markup/assets/index-0ceb4e21.css">
   </head>
   <body>
     <header>
@@ -261,9 +261,95 @@
 
       <section class="application-section" id="application">
   <div class="container">
-    <h2>Leave an application</h2>
+    <h2 class="section-title">Leave an <span class="section-title-extra">application</span></h2>
+
+    <p class="section-description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
+
+    <div class="application">
+      <div class="application-image">
+        <img
+          srcset="/final-markup/assets/application-f2813164.jpg 1x, /final-markup/assets/application@2x-49ad92fa.jpg 2x"
+          src="/final-markup/assets/application-f2813164.jpg"
+          alt="application"
+          height="392"
+          width="492" />
+
+        <p class="description">
+          <span class="number">1000</span> of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.
+        </p>
+      </div>
+
+      <form name="application_form" autocomplete="off" novalidate class="application-form">
+        <div class="form-group">
+          <label class="label">Name</label>
+
+          <input type="text" name="name" class="form-input" placeholder="Name" required />
+        </div>
+
+        <div class="form-group">
+          <label class="label">Email</label>
+
+          <input type="email" name="email" class="form-input" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+        </div>
+
+        <div class="form-group">
+          <label class="label">Phone</label>
+
+          <input type="tel" name="phone" class="form-input" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+        </div>
+
+        <div class="form-group comment">
+          <label class="label">Comment</label>
+
+          <textarea name="comment" class="form-input" placeholder="Comment" rows="4"></textarea>
+        </div>
+
+        <fieldset class="teacher">
+          <legend class="title">Choose a teacher</legend>
+
+          <div class="radiobuttons">
+            <div class="option">
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-1" required />
+
+              <label for="teacher-1" class="radio-label"></label>
+
+              <label for="teacher-1" class="radiobutton-label">Maria</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-2" required />
+
+              <label for="teacher-2" class="radio-label"></label>
+
+              <label for="teacher-2" class="radiobutton-label">Artem</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-3" required />
+
+              <label for="teacher-3" class="radio-label"></label>
+
+              <label for="teacher-3" class="radiobutton-label">Ilona</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-4" required />
+
+              <label for="teacher-4" class="radio-label"></label>
+
+              <label for="teacher-4" class="radiobutton-label">Volodymyr</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="form-submit">Send</button>
+
+        <p class="message">By clicking on “Send” button, you agree to our <a href="#" class="link">Privacy Policy</a>, and allow Promodo to use this information for marketing purposes.</p>
+      </form>
+    </div>
   </div>
 </section>
+
       <section class="reviews-section" id="reviews">
   <div class="container">
     <h2>What our students say</h2>
