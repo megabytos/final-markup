@@ -239,8 +239,7 @@ input[type="radio"]:checked + .radio-label:after {
     display: flex;
     gap: 32px;
     margin: 0 auto;
-    padding: 0 64px 150px 64px;
-    width: 1152px;
+    padding-bottom: 150px;
   }
 
   .application-image {
