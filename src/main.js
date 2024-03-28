@@ -2,12 +2,14 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtns = document.querySelectorAll('.js-close-menu');
+  const mobileOverlay = document.querySelector('.js-mobile-overlay');
 
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    mobileOverlay.classList.toggle('is-open');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
@@ -16,7 +18,9 @@
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtns.forEach(btn => btn.addEventListener('click', toggleMenu));
+  if (window.innerWidth < 1280) {
+    closeMenuBtns.forEach(btn => btn.addEventListener('click', toggleMenu));
+  }
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {

@@ -20,4 +20,7 @@
   --footer-color: rgba(255, 255, 255, 0.6);
   --form-border: rgba(18, 20, 23, 0.10);
   --radio-border: rgba(18, 20, 23, 0.20);
+  --social-overlay-border: rgba(255, 255, 255, 0.1);
+  --social-header-border: rgba(18, 20, 23, 0.1);
+  --social-header-border-active: rgba(77, 194, 116, 0.1);
 }
