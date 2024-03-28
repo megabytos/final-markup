@@ -1,28 +1,13 @@
 /* lessons styles */
-.section-description {
-  padding: 0;
-}
 
-@media only screen and (min-width: 768px) {
-  .section-description {
-    padding: 0 20px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .section-description {
-    padding: 0 180px;
-  }
-}
-
-.tariff-cards {
+.lesson-cards {
   display: grid;
   justify-content: center;
   row-gap: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .tariff-cards {
+  .lesson-cards {
     grid-template-columns: repeat(2, 336px);
     column-gap: 32px;
     row-gap: 32px;
@@ -30,7 +15,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .tariff-cards {
+  .lesson-cards {
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -38,22 +23,34 @@
   }
 }
 
-.tariff-card-item {
+.lesson-card-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  gap: 16px;
   border: 1px solid var(--border-color);
   background-color: var(--secondary-color);
-  padding: 32px;
+  padding: 20px;
   border-radius: 16px;
-  counter-increment: list-counter;
-  width: 336px;
-  height: 400px;
+  max-width: 336px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.tariff-name {
+@media only screen and (min-width: 768px) {
+  .lesson-card-item {
+    padding: 16px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lesson-card-item {
+    padding: 32px;
+  }
+}
+
+.lesson-name {
+  padding: 20px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -61,6 +58,18 @@
   text-align: center;
   font-family: var(--primary-font);
   color: var(--heading-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .lesson-name {
+    padding: 16px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lesson-name {
+    padding-bottom: 16px;
+  }
 }
 
 .body-strong {
@@ -76,43 +85,65 @@
 .body-tiny {
   font-family: var(--heading-font);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.7;
   text-align: center;
   color: var(--primary-color);
+
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .body-tiny {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 32px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .body-tiny {
+    padding: 16px 0;
+  }
 }
 
 .card-button {
-  margin-top: 16px;
-  width: 256px;
-  height: 60px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
   border: 2px solid transparent;
   border-color: var(--border-color);
   border-radius: 12px;
   background-color: var(--button-background);
   color: var(--button-foreground);
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  width: 295px;
+
+  margin: 20px 0;
+  padding: 14px 0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .card-button {
-    width: 304px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 16px 0;
+
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .card-button {
-    border-radius: 12px;
-    width: 256px;
-    height: 60px;
+    margin-top: 16px;
+    width: 100%;
   }
 }
+
 .card-button:hover,
 .card-button:focus {
   background-color: var(--active-color);
@@ -121,20 +152,20 @@
 
 /* Even cards */
 
-.tariff-card-item:nth-child(even) {
+.lesson-card-item:nth-child(even) {
   background-color: var(--substrate-color);
 }
 
-.tariff-card-item:nth-child(even) .tariff-name,
-.tariff-card-item:nth-child(even) .body-strong,
-.tariff-card-item:nth-child(even) .body-tiny {
+.lesson-card-item:nth-child(even) .lesson-name,
+.lesson-card-item:nth-child(even) .body-strong,
+.lesson-card-item:nth-child(even) .body-tiny {
   color: var(--secondary-color);
 }
 
-.tariff-card-item:nth-child(even) .card-button {
+.lesson-card-item:nth-child(even) .card-button {
   border: 1px solid var(--button-foreground);
 }
-.tariff-card-item:nth-child(even) .card-button:hover,
+.lesson-card-item:nth-child(even) .card-button:hover,
 .card-button:focus {
   background-color: var(--button-foreground);
   color: var(--substrate-color);
