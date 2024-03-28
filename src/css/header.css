@@ -1,8 +1,11 @@
 /* header styles */
 
 .nav-menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-nav-list {
@@ -12,17 +15,18 @@
 .logo {
   font-size: 20px;
   font-weight: 700;
-  color: var(--heading-color)
+  line-height: calc(27 / 20);
+  color: var(--heading-color);
 }
 
 .logo-part {
-  color: var(--substrate-color)
+  color: var(--substrate-color);
 }
 
 .burger-icon {
   width: 32px;
   height: 32px;
-  fill: var(--heading-color)
+  fill: var(--heading-color);
 }
 
 .menu-toggle {
