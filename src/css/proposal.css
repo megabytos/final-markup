@@ -1,7 +1,6 @@
 /* proposal styles */
 .proposal-section .container {
-    padding-bottom: 0;
-    padding-left: 20px;
+    padding: 0;
     background: var(--primary-bg-color);
     border-radius: 16px;
     height: 737px;
@@ -10,8 +9,6 @@
 
 @media screen and (min-width: 768px) {
     .proposal-section .container {
-        padding-top: 64;
-        padding-left: 32px;
         border-radius: 30px;
         height: 950px;
         width: 704px;
@@ -20,7 +17,6 @@
 
 @media screen and (min-width: 1280px) {
     .proposal-section .container {
-        padding-left: 40px;
         width: 1152px;
     }
 }
@@ -42,6 +38,7 @@
     font-weight: 700;
     line-height: 40px;
     color: var(--secondary-color);
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -49,14 +46,17 @@
         min-width: 640px;
         font-size: 60px;
         line-height: 70px;
-        top: 40px;
+        top: 64px;
         min-width: 640px;
+        margin-left: 32px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .proposal-title {
         max-width: 776px;
+        top: 64px;
+        margin-left: 64px;
     }
 }
 
@@ -71,6 +71,7 @@
     height: 408px;
     border-radius: 16px;
     margin-top: 96px;
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -79,7 +80,7 @@
         margin-top: 140px;
         column-gap: 5px;
         max-width: 668px;
-        margin-left: -14.07px;
+        margin-left: 18px;
         height: 500px;
         border-radius: 30px;
     }
@@ -88,6 +89,7 @@
 @media screen and (min-width: 1280px) {
     .proposal-main-card-container {
         grid-template-columns: 746px auto;
+        margin-left: 64px;
         margin-top: 178px;
         max-width: 1024px;
         height: 471px;
@@ -144,6 +146,7 @@
     height: 408px;
     border-radius: 16px;
     margin-top: 100px;
+    margin-left: 24px;
     transform: rotate(-11deg);
 }
 
@@ -152,8 +155,8 @@
         width: 668px;
         height: 500px;
         border-radius: 30px;
-        margin-left: -20px;
-        margin-top: 160px;
+        margin-left: 18px;
+        margin-top: 150px;
         transform: rotate(-9.8deg);
     }
 }
@@ -163,7 +166,7 @@
         width: 1050px;
         height: 463px;
         border-radius: 30px;
-        margin-left: -14px;
+        margin-left: 40px;
         margin-top: 180px;
         transform: rotate(-8deg);
     }
@@ -178,9 +181,9 @@
     width: 295px;
     height: 408px;
     border-radius: 16px;
-    margin-left: 6.85px;
+    margin-left: 24px;
     margin-top: 100px;
-    transform: rotate(11deg);
+    transform: rotate(9deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -188,7 +191,7 @@
         width: 668px;
         height: 500px;
         border-radius: 30px;
-        margin-left: -20px;
+        margin-left: 18px;
         margin-top: 144px;
         transform: rotate(10.65deg);
     }
@@ -199,7 +202,7 @@
         width: 1011px;
         height: 402px;
         margin-top: 220px;
-        margin-left: 14px;
+        margin-left: 68px;
         transform: rotate(11deg);
     }
 }
@@ -235,7 +238,7 @@
         min-width: 307px;
         margin-left: 64px;
         margin-top: 64px;
-        margin-bottom: 42px;
+        margin-bottom: 80px;
             
         font-size: 40px;
         line-height: 48px;
@@ -251,7 +254,6 @@
 
     margin-left: 20px;
     margin-bottom: 50px;
-    height: 156px;
     min-width: 255px;
 }
 
@@ -259,7 +261,6 @@
     .proposal-features-list {
         margin-left: 28px;
         margin-bottom: 42px;
-        height: 200px;
         max-width: 451px;
     }
 }
@@ -268,7 +269,6 @@
     .proposal-features-list {
         margin-left: 64px;
         margin-bottom: 42px;
-        height: 156px;
         min-width: 654px;
     }
 }
