@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "glob": "^8.1.0",
-    "vite": "^4.5.2"
+    "vite": "^4.5.2",
+    "glob": "^8.1.0"
   },
   "author": "Alex Goliansky <goliansky@gmail.com>",
   "license": "ISC",
