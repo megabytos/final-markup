@@ -89,7 +89,6 @@
   line-height: 1.7;
   text-align: center;
   color: var(--primary-color);
-
   padding-top: 40px;
 }
 
@@ -116,13 +115,12 @@
   border-radius: 12px;
   background-color: var(--button-background);
   color: var(--button-foreground);
-
-  margin: 20px 0;
-  padding: 14px 0;
-  width: 100%;
   box-sizing: border-box;
   transition: background-color 0.3s, border-color 0.3s;
   text-align: center;
+  margin: 20px 0;
+  padding: 14px 0;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -130,7 +128,6 @@
     font-size: 18px;
     line-height: 1.5;
     padding: 16px 0;
-
     margin-top: 0;
     margin-bottom: 16px;
     width: 100%;
