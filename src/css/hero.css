@@ -1,19 +1,23 @@
 /* hero styles */
 .hero-section .container {
-  width: 280px;
+  min-width: 280px;
   height: 620px;
   border-radius: 16px;
   background-image: url(../images/hero/mob_block_1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   position: relative;
+}
+
+.hero-section {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 375px) {
   .hero-section .container {
-    width: 335px;
+    min-width: 335px;
     height: 709px;
   }
 }
@@ -26,7 +30,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-section .container {
-    width: 704px;
+    min-width: 704px;
     height: 857px;
     border-radius: 30px;
     background-image: url(../images/hero/tab_block_1x.jpg);
@@ -57,7 +61,6 @@
 .hero-title {
   padding-top: 375px;
   padding-bottom: 30px;
-
   font-weight: 700;
   font-size: 30px;
   line-height: 1.05em;
@@ -80,7 +83,6 @@
   .hero-title {
     padding-top: 260px;
     width: 488px;
-
     font-size: 60px;
     line-height: 1.17em;
   }
@@ -97,7 +99,7 @@
   border-radius: 12px;
   border: none;
 
-  width: 240px;
+  width: 100%;
   height: 52px;
 
   font-weight: 700;
@@ -123,7 +125,6 @@
   .hero-button {
     width: 306px;
     height: 60px;
-
     font-size: 18px;
     line-height: 1.56em;
   }
@@ -132,13 +133,10 @@
 .hero-scroll-button {
   border-radius: 100%;
   border: none;
-
   width: 38px;
   height: 38px;
-
   background-color: var(--secondary-color);
   --svg-color: #4dc274;
-
   position: absolute;
   bottom: 20px;
   right: 15px;
@@ -154,7 +152,6 @@
   .hero-scroll-button {
     width: 48px;
     height: 48px;
-
     bottom: 30px;
     right: 32px;
   }
