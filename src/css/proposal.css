@@ -1,6 +1,7 @@
 /* proposal styles */
 .proposal-section .container {
-    padding: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
     background: var(--primary-bg-color);
     border-radius: 16px;
     height: 737px;
@@ -9,6 +10,8 @@
 
 @media screen and (min-width: 768px) {
     .proposal-section .container {
+        padding-top: 64;
+        padding-left: 32px;
         border-radius: 30px;
         height: 950px;
         width: 704px;
@@ -17,7 +20,7 @@
 
 @media screen and (min-width: 1280px) {
     .proposal-section .container {
-        padding: 0 64px;
+        padding-left: 40px;
         width: 1152px;
     }
 }
@@ -33,7 +36,6 @@
 
 .proposal-title {
     max-width: 776px;
-    margin-left: 20px;
     position: relative;
     top: 40px;
     font-size: 38px;
@@ -45,64 +47,50 @@
 @media screen and (min-width: 768px) {
     .proposal-title {
         min-width: 640px;
-        margin-left: 32px;
-        position: relative;
+        font-size: 60px;
+        line-height: 70px;
         top: 40px;
         min-width: 640px;
-        margin-left: 32px;
-        position: relative;
-        top: 40px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .proposal-title {
         max-width: 776px;
-        margin-left: 64px;
-        margin-bottom: 198px;
-        position: relative;
-        top: 64px;
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 70px;
-        color: var(--secondary-color);
     }
 }
 
 .proposal-main-card-container {
+    z-index: 10;
     display: grid;
     align-items: start;
     position: absolute;
     background-color: var(--secondary-color);
-    z-index: 100;
 
     grid-template-columns: 295px auto;
-    width: 295;
     height: 408px;
     border-radius: 16px;
-    margin-left: 20px;
-    
+    margin-top: 96px;
 }
 
 @media screen and (min-width: 768px) {
     .proposal-main-card-container {
-        grid-template-columns: 746px auto;
+        grid-template-columns: 479px auto;
+        margin-top: 140px;
         column-gap: 5px;
-        width: 1024px;
-        height: 471px;
+        max-width: 668px;
+        margin-left: -14.07px;
+        height: 500px;
         border-radius: 30px;
-        margin-left: 64px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .proposal-main-card-container {
         grid-template-columns: 746px auto;
-        column-gap: 5px;
-        width: 1024px;
+        margin-top: 178px;
+        max-width: 1024px;
         height: 471px;
-        border-radius: 30px;
-        margin-left: 64px;
     }
 }
 
@@ -133,9 +121,9 @@
 
 @media screen and (min-width: 768px) {
     .proposal-right-container {
-        margin-top: 112px;
-        margin-bottom: 112px;
-        margin-left: 72px;
+        display: block;
+        margin-top: 200px;
+        margin-left: 0;
     }
 }
 
@@ -148,24 +136,25 @@
 }
 
 .proposal-bg-mid-card { 
-    z-index: 10;
+    z-index: 0;
     position: absolute;
     background-color: var(--secondary-accent-color);
 
     width: 295px;
     height: 408px;
     border-radius: 16px;
-    margin-left: 48px;
+    margin-top: 100px;
     transform: rotate(-11deg);
 }
 
 @media screen and (min-width: 768px) {
     .proposal-bg-mid-card {
-        width: 1050px;
-        height: 463px;
+        width: 668px;
+        height: 500px;
         border-radius: 30px;
-        margin-left: 48px;
-        transform: rotate(-8deg);
+        margin-left: -20px;
+        margin-top: 160px;
+        transform: rotate(-9.8deg);
     }
 }
 
@@ -174,14 +163,15 @@
         width: 1050px;
         height: 463px;
         border-radius: 30px;
-        margin-left: 48px;
+        margin-left: -14px;
+        margin-top: 180px;
         transform: rotate(-8deg);
     }
 }
 
 .proposal-bg-bottom-card {
-    position: absolute;
     z-index: 5;
+    position: absolute;
     opacity: 0.5;
     background-color: var(--secondary-color);
 
@@ -189,17 +179,18 @@
     height: 408px;
     border-radius: 16px;
     margin-left: 6.85px;
+    margin-top: 100px;
     transform: rotate(11deg);
 }
 
 @media screen and (min-width: 768px) {
     .proposal-bg-bottom-card {
-        width: 1011px;
-        height: 402px;
+        width: 668px;
+        height: 500px;
         border-radius: 30px;
-        margin-top: 54px;
-        margin-left: 64px;
-        transform: rotate(11deg);
+        margin-left: -20px;
+        margin-top: 144px;
+        transform: rotate(10.65deg);
     }
 }
 
@@ -207,8 +198,8 @@
     .proposal-bg-bottom-card {
         width: 1011px;
         height: 402px;
-        margin-top: 54px;
-        margin-left: 64px;
+        margin-top: 220px;
+        margin-left: 14px;
         transform: rotate(11deg);
     }
 }
@@ -230,7 +221,7 @@
 @media screen and (min-width: 768px) {
     .proposal-small-title {
         min-width: 307px;
-        margin-left: 64px;
+        margin-left: 28px;
         margin-top: 64px;
         margin-bottom: 42px;
             
@@ -266,9 +257,10 @@
 
 @media screen and (min-width: 768px) {
     .proposal-features-list {
-        margin-left: 64px;
+        margin-left: 28px;
         margin-bottom: 42px;
-        height: 156px;
+        height: 200px;
+        max-width: 451px;
     }
 }
 
@@ -277,6 +269,7 @@
         margin-left: 64px;
         margin-bottom: 42px;
         height: 156px;
+        min-width: 654px;
     }
 }
 
@@ -314,14 +307,15 @@
 @media screen and (min-width: 768px) {
     .proposal-features-item-text {
         line-height: 24px;
+        font-size: 18px;
         min-height: 24px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .proposal-features-item-text {
-        line-height: 24px;
         min-height: 24px;
+        font-size: 16px;
     }
 }
 
@@ -392,7 +386,7 @@
 
 @media screen and (min-width: 768px) {
     .proposal-main-btn {
-        margin-left: 64px;
+        margin-left: 28px;
         height: 60px;
         min-width: 306px;
         font-size: 18px;
