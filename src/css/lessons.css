@@ -1,1 +1,169 @@
 /* lessons styles */
+
+.lesson-cards {
+  display: grid;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .lesson-cards {
+    grid-template-columns: repeat(2, 336px);
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lesson-cards {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.lesson-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 336px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  .lesson-card-item {
+    padding: 16px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lesson-card-item {
+    padding: 32px;
+  }
+}
+
+.lesson-name {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--heading-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .lesson-name {
+    padding: 16px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lesson-name {
+    padding-bottom: 16px;
+  }
+}
+
+.body-strong {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--heading-color);
+}
+
+.body-tiny {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--primary-color);
+  padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .body-tiny {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 32px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .body-tiny {
+    padding: 16px 0;
+  }
+}
+
+.card-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  border: 2px solid transparent;
+  border-color: var(--border-color);
+  border-radius: 12px;
+  background-color: var(--button-background);
+  color: var(--button-foreground);
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-align: center;
+  margin: 20px 0;
+  padding: 14px 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-button {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 16px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card-button {
+    margin-top: 16px;
+    width: 100%;
+  }
+}
+
+.card-button:hover,
+.card-button:focus {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+}
+
+/* Even cards */
+
+.lesson-card-item:nth-child(even) {
+  background-color: var(--substrate-color);
+}
+
+.lesson-card-item:nth-child(even) .lesson-name,
+.lesson-card-item:nth-child(even) .body-strong,
+.lesson-card-item:nth-child(even) .body-tiny {
+  color: var(--secondary-color);
+}
+
+.lesson-card-item:nth-child(even) .card-button {
+  border: 1px solid var(--button-foreground);
+}
+.lesson-card-item:nth-child(even) .card-button:hover,
+.card-button:focus {
+  background-color: var(--button-foreground);
+  color: var(--substrate-color);
+}

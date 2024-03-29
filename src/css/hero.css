@@ -1,16 +1,175 @@
 /* hero styles */
 .hero-section .container {
+  min-width: 280px;
+  height: 620px;
   border-radius: 16px;
+  background-image: url(../images/hero/mob_block_1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .hero-section .container {
+    min-width: 335px;
+    height: 709px;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
+  .hero-section .container {
+    background-image: url(../images/hero/mob_block_2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section .container {
+    min-width: 704px;
+    height: 857px;
     border-radius: 30px;
+    background-image: url(../images/hero/tab_block_1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section .container {
+    background-image: url(../images/hero/tab_block_2x.jpg);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero-section .container {
     padding: 0 64px;
+    width: 1152px;
+    height: 629px;
+    background-image: url(../images/hero/desktop_block_1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .hero-section .container {
+    background-image: url(../images/hero/desktop_block_2x.jpg);
+  }
+}
+
+.hero-title {
+  padding-top: 375px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.05em;
+  color: var(--secondary-color);
+}
+
+.hero-title-span {
+  color: var(--primary-accent-color);
+}
+
+@media screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 38px;
+    padding-top: 425px;
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    padding-top: 260px;
+    width: 488px;
+    font-size: 60px;
+    line-height: 1.17em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    padding-top: 160px;
+    width: 564px;
+  }
+}
+
+.hero-button {
+  border-radius: 12px;
+  border: none;
+
+  width: 100%;
+  height: 52px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71em;
+  color: var(--secondary-color);
+  background-color: var(--button-background);
+}
+
+.hero-button:hover,
+:focus {
+  background-color: var(--active-color);
+}
+
+@media screen and (min-width: 375px) {
+  .hero-button {
+    width: 295px;
+    height: 52px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-button {
+    width: 306px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 1.56em;
+  }
+}
+
+.hero-scroll-button {
+  border-radius: 100%;
+  border: none;
+  width: 38px;
+  height: 38px;
+  background-color: var(--secondary-color);
+  --svg-color: #4dc274;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+.hero-scroll-button:hover,
+.hero-scroll-button:focus {
+  background-color: var(--button-background);
+  --svg-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-scroll-button {
+    width: 48px;
+    height: 48px;
+    bottom: 30px;
+    right: 32px;
+  }
+}
+
+.icon-arrow {
+  width: 12px;
+  height: 7px;
+}
+
+.icon-arrow:hover use,
+.icon-arrow:focus use {
+  fill: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .icon-arrow {
+    width: 14px;
+    height: 8px;
   }
 }
