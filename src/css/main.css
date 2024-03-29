@@ -51,10 +51,11 @@ section {
 }
 
 .section-title-extra:after {
-  height: 20px;
+  height: 12px;
   content: '';
-  width: 100%;
-  bottom: 0;
+  width: calc(100% + 5px);
+  left: -2px;
+  bottom: -2px;
   z-index: -1;
   display: block;
   border-radius: 8px;
@@ -87,6 +88,11 @@ section {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .section-title-extra:after {
+    height: 20px;
+    bottom: -1px;
   }
 
   .section-description {
