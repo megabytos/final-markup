@@ -1,17 +1,6 @@
 /* footer styles */
 footer {
     background-color: var(--heading-color);
-    padding: 40px 0px 0px;
-}
-@media only screen and (min-width: 768px) {
-    footer {
-        padding: 32px 0px 0px;
-    }
-}
-@media only screen and (min-width: 1280px) {
-    footer {
-        padding: 64px 0px 0px;
-    }
 }
 
 footer .container {
@@ -19,8 +8,6 @@ footer .container {
     flex-direction: column;
     row-gap: 40px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 @media only screen and (min-width: 768px) {
     footer .container {
@@ -28,15 +15,11 @@ footer .container {
         flex-wrap: wrap;
         justify-content: space-between;
         row-gap: 110px;
-        padding-left: 32px;
-        padding-right: 32px;
     }
 }
 @media only screen and (min-width: 1280px) {
     footer .container {
         row-gap: 64px;
-        padding-left: 128px;
-        padding-right: 128px;
     }
 }
 
@@ -186,20 +169,17 @@ footer .container {
     row-gap: 14px;
     border-top: 1px solid var(--footer-border-color);
     padding-top: 20px;
-    padding-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
     .copyright {
         flex-direction: row;
         justify-content: space-between;
         padding-top: 16px;
-        padding-bottom: 16px;
     }
 }
 @media only screen and (min-width: 1280px) {
     .copyright {
         padding-top: 23px;
-        padding-bottom: 23px;
     }
 }
 .copyright-text {
