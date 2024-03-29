@@ -72,16 +72,16 @@
 .proposal-main-card-container {
     display: grid;
     align-items: start;
-    position: relative;
+    position: absolute;
     background-color: var(--secondary-color);
     z-index: 100;
 
-    grid-template-columns: 255px auto;
-    column-gap: 5px;
+    grid-template-columns: 295px auto;
     width: 295;
     height: 408px;
     border-radius: 16px;
     margin-left: 20px;
+    
 }
 
 @media screen and (min-width: 768px) {
