@@ -1,5 +1,3 @@
-import debounce from 'lodash.debounce';
-
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
@@ -39,7 +37,8 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   centeredSlides: false,
   effect: 'none',
-  allowTouchMove: false,
+  allowTouchMove: true,
+  spaceBetween: 32,
 
   // If we need pagination
   pagination: {
@@ -62,64 +61,16 @@ const swiper = new Swiper('.swiper', {
 
   breakpoints: {
     375: {
+      loop: true,
       slidesPerView: 1,
     },
     768: {
+      loop: true,
       slidesPerView: 2,
     },
     1280: {
+      loop: false,
       slidesPerView: 3,
     }
   }
 });
-
-const prevButton = document.querySelector('.swiper-button-prev');
-const nextButton = document.querySelector('.swiper-button-next');
-const swiper_wrap = document.querySelector('.swiper-wrapper');
-const el = document.querySelector('.reviews-list'); // получаем наш параграф
-const styles = window.getComputedStyle(el);
-
-const mediaQuery = window.matchMedia('(min-width: 768px)');
-console.log(mediaQuery);
-
-
-if (mediaQuery.matches) {
-  tabletSwiper();
-}
-else {
-  mobileSwiper();
-}
-
-function handleTabletChange() {
-  if (mediaQuery.matches) {
-    tabletSwiper();
-  } else {
-    mobileSwiper();
-  }
-}
-
-window.addEventListener('resize', debounce(handleTabletChange, 20));
-
-
-function tabletSwiper() {
-  let gap = parseInt(styles.gap);
-  nextButton.addEventListener('click', () => {
-    swiper_wrap.style.left = `-${gap / 2}px`;
-
-  });
-
-  prevButton.addEventListener('click', () => {
-    swiper_wrap.style.left = "0px";
-  });
-}
-
-function mobileSwiper() {
-  nextButton.addEventListener('click', () => {
-    swiper_wrap.style.left = "0px";
-
-  });
-
-  prevButton.addEventListener('click', () => {
-    swiper_wrap.style.left = "0px";
-  });
-}
