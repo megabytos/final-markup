@@ -110,7 +110,7 @@
 }
 
 .hero-button:hover,
-:focus {
+.hero-button:focus {
   background-color: var(--active-color);
 }
 
