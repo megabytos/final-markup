@@ -1,7 +1,3 @@
-.application {
-  padding-bottom: 80px;
-}
-
 .application-form {
   max-width: 500px;
   margin: 0 auto;
@@ -227,19 +223,13 @@ input[type="radio"]:checked + .radio-label:after {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .application {
-    padding-bottom: 100px;
-  }
-}
 
 @media screen and (min-width: 1280px) {
   .application {
     align-items: stretch;
     display: flex;
     gap: 32px;
-    margin: 0 auto;
-    padding-bottom: 150px;
+    margin: 0 auto;    
   }
 
   .application-image {
