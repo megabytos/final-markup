@@ -1,5 +1,5 @@
 /* proposal styles */
-.proposal-section .container {
+.proposal-container {
     padding: 0;
     background: var(--primary-bg-color);
     border-radius: 16px;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .proposal-section .container {
+    .proposal-container {
         border-radius: 30px;
         height: 950px;
         width: 704px;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .proposal-section .container {
+    .proposal-container {
         width: 1152px;
     }
 }
