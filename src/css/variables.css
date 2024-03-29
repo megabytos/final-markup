@@ -23,4 +23,10 @@
   --social-overlay-border: rgba(255, 255, 255, 0.1);
   --social-header-border: rgba(18, 20, 23, 0.1);
   --social-header-border-active: rgba(77, 194, 116, 0.1);
+  --footer-border-color: rgba(255, 255, 255, 0.1);
+  --footer-social-border-active: rgba(77, 194, 116, 0.1);
+  --footer-social-color: #ffffff;
+  --swiper-navigation-size: 24px;
+  --swiper-theme-color: var(--border-color);
+  --swiper-navigation-sides-offset: 3px;
 }

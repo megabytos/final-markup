@@ -1,3 +1,5 @@
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
@@ -30,3 +32,47 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  centeredSlides: false,
+  effect: 'none',
+  allowTouchMove: true,
+  spaceBetween: 32,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  slidesPerView: 1,
+
+  breakpoints: {
+    375: {
+      loop: true,
+      slidesPerView: 1,
+    },
+    768: {
+      loop: true,
+      slidesPerView: 2,
+    },
+    1280: {
+      loop: false,
+      slidesPerView: 3,
+    }
+  }
+});
