@@ -4,8 +4,7 @@
     padding: 0;
     background: var(--primary-bg-color);
     border-radius: 16px;
-    height: 737px;
-       
+    height: 737px;    
 }
 
 @media screen and (min-width: 768px) {
@@ -107,7 +106,7 @@
 
 @media screen and (min-width: 768px) {
     .proposal-left-container {
-        padding: 0 32px 64px 10px;
+        padding: 64px 32px 64px 32px;
         min-height: 604px;
     }
 }
@@ -115,6 +114,8 @@
 @media screen and (min-width: 1280px) {
     .proposal-left-container {
         min-height: 604px;
+        padding-top: 0;
+        padding-left: 0;
     }
 }
 
@@ -258,8 +259,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .proposal-features-list {
-        margin-left: 28px;
+    .proposal-features-list {        
         margin-bottom: 32px;
         max-width: 451px;
     }
@@ -286,8 +286,11 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .proposal-features-list li {        
-        font-size: 20px;        
+    .proposal-features-list li {  
+        line-height: 28px;
+        font-size: 20px;  
+        padding-left: 44px;
+        
     }
 }
 
@@ -311,8 +314,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .proposal-main-btn {
-        margin-left: 28px;
+    .proposal-main-btn {        
         height: 60px;
         min-width: 306px;
         font-size: 18px;
