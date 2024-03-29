@@ -1,23 +1,24 @@
 /* proposal styles */
 .proposal-container {
+    width: auto;
     padding: 0;
     background: var(--primary-bg-color);
     border-radius: 16px;
     height: 737px;
-    width: 335px;
+       
 }
 
 @media screen and (min-width: 768px) {
     .proposal-container {
         border-radius: 30px;
-        height: 950px;
-        width: 704px;
+        height: 950px;        
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .proposal-container {
-        width: 1152px;
+    .proposal-container {              
+        margin-left: -64px;
+        margin-right: -64px;
     }
 }
 
@@ -101,12 +102,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
-    min-height: 255px;
+    padding: 40px 20px;
 }
 
 @media screen and (min-width: 768px) {
     .proposal-left-container {
+        padding: 0 32px 64px 10px;
         min-height: 604px;
     }
 }
@@ -124,7 +125,7 @@
 @media screen and (min-width: 768px) {
     .proposal-right-container {
         display: block;
-        margin-top: 200px;
+        margin-top: 174px;
         margin-left: 0;
     }
 }
@@ -141,7 +142,6 @@
     z-index: 0;
     position: absolute;
     background-color: var(--secondary-accent-color);
-
     width: 295px;
     height: 408px;
     border-radius: 16px;
@@ -210,24 +210,14 @@
 .proposal-small-title {
     color: var(--heading-color);
     font-weight: 700;
-
-    min-width: 154px;
-    max-height: 24px;
-    margin-left: 20px;
-    margin-top: 40px;
-    margin-bottom: 44px;
-
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .proposal-small-title {
-        min-width: 307px;
-        margin-left: 28px;
-        margin-top: 64px;
-        margin-bottom: 42px;
-            
+    .proposal-small-title {        
+        margin-bottom: 32px;            
         font-size: 40px;
         line-height: 48px;
     }
@@ -238,8 +228,7 @@
         min-width: 307px;
         margin-left: 64px;
         margin-top: 64px;
-        margin-bottom: 80px;
-            
+        margin-bottom: 40px;            
         font-size: 40px;
         line-height: 48px;
     }
@@ -251,17 +240,31 @@
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
-
-    margin-left: 20px;
-    margin-bottom: 50px;
-    min-width: 255px;
+    margin: 0 0 20px 0;    
 }
+
+.proposal-features-list li {
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    background-image: url('data: image/svg+xml, <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="14" fill="%234DC274" /><path d="M20.6667 9L11.5 18.1667L7.33334 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>');
+    background-position: 0 center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 28px;
+}
+
 
 @media screen and (min-width: 768px) {
     .proposal-features-list {
         margin-left: 28px;
-        margin-bottom: 42px;
+        margin-bottom: 32px;
         max-width: 451px;
+    }
+    .proposal-features-img {
+        min-width: 214px;
     }
 }
 
@@ -269,102 +272,26 @@
     .proposal-features-list {
         margin-left: 64px;
         margin-bottom: 42px;
-        min-width: 654px;
+        min-width: 682px;
     }
-}
-
-.proposal-features-item {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-    gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
-    .proposal-features-item {
-        min-height: 28px;
-        gap: 16px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .proposal-features-item {
-        gap: 16px;
-    }
-}
-
-.proposal-features-item-text {
-    font-weight: 700;
-    color: var(--heading-color);
-    margin: 0;
-
-    line-height: 20px;
-    font-size: 14px;
-    letter-spacing: -0.2px;
-}
-
-@media screen and (min-width: 768px) {
-    .proposal-features-item-text {
+    .proposal-features-list li {
+        padding-left: 44px;
+        background-size: 28px 28px;
         line-height: 24px;
-        font-size: 18px;
-        min-height: 24px;
+        font-size: 18px;        
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .proposal-features-item-text {
-        min-height: 24px;
-        font-size: 16px;
+    .proposal-features-list li {        
+        font-size: 20px;        
     }
 }
 
-.icon-check-circle {
-    fill: var(--secondary-color);
-    background: var(--active-color);
-    border-radius: 50%;
-    flex-shrink: 0;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    width: 20px;
-    height: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .icon-check-circle {
-        width: 28px;
-        height: 28px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .icon-check-circle {
-        width: 28px;
-        height: 28px;
-    }
-}
-
-.icon-check {
-    width: 8px;
-    height: 6px;
-}
-
-@media screen and (min-width: 768px) {
-    .icon-check {
-        width: 13.33px;
-        height: 9.18px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .icon-check {
-        width: 13.33px;
-        height: 9.18px;
-    }
-}
 
 .proposal-main-btn {
     align-items: center;
@@ -376,12 +303,11 @@
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 700;
-    border-radius: 12px;
-
-    margin-left: 20px;
+    border-radius: 12px;   
     height: 52px;
     min-width: 255px;
     font-size: 18px;
+    margin: 0;
 }
 
 @media screen and (min-width: 768px) {
