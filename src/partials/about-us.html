@@ -20,12 +20,13 @@
       </li>
     </ol>
     <div class="about-us-cta">
-      <img
-        srcset="/images/memoji.png 1x, /images/memoji@2x.png 2x"
-        src="/images/memoji.png"
-        alt="A woman making the 'number one' gesture"
-        class="about-us-cta-image"
-      />
+      <picture>
+        <source srcset="/images/about/avif/memoji_1x.avif 1x, /images/about/avif/memoji_2x.avif 2x" type="image/avif" />
+        <source srcset="/images/about/webp/memoji_1x.webp 1x, /images/about/webp/memoji_2x.webp 2x" type="image/webp" />
+        <source srcset="images/about/memoji_1x.png 1x, images/about/memoji_2x.png 2x" type="image/img" />
+        <img class="about-us-cta-image" src="images/about/memoji_1x.png " alt="A woman making the 'number one' gesture"
+          width="255" height="172" loading="lazy" />
+      </picture>
     </div>
   </div>
 </section>
