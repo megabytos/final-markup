@@ -27,7 +27,7 @@
     <a class="logo" href="./index.html">english<span class="logo-part">excellence</span>.</a>
     <div class="overlay js-mobile-overlay" id="overlay"></div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="close-button js-close-menu">
+      <button class="close-button js-close-menu" aria-label="Close menu">
         <svg class="icon-close">
           <use href="/final-markup/assets/icons-aa7f756d.svg#icon-cross"></use>
         </svg>
@@ -73,7 +73,7 @@
         </li>
       </ul>
     </div>
-    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"  aria-label="Open menu">
       <svg class="burger-icon">
         <use href="/final-markup/assets/icons-aa7f756d.svg#icon-burger"></use>
       </svg>
@@ -179,7 +179,7 @@
             <li>Learn in a nurturing setting where every student's progress matters.</li>
             <li>Experience the satisfaction of real progress as your language skills and confidence grow with every session.</li>
           </ul>
-          <button class="proposal-main-btn" onClick="document.getElementById('application').scrollIntoView();">
+          <button class="proposal-main-btn" onClick="document.getElementById('application').scrollIntoView();" aria-label="Leave an application">
             Leave an application
           </button>
         </div>
@@ -432,7 +432,7 @@
           </div>
         </fieldset>
 
-        <button type="submit" class="form-submit">Send</button>
+        <button type="submit" class="form-submit" aria-label="Send">Send</button>
 
         <p class="message">By clicking on “Send” button, you agree to our <a href="#" class="link">Privacy Policy</a>,
           and allow Promodo to use this information for marketing purposes.</p>
