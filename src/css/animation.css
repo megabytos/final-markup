@@ -88,7 +88,7 @@
   animation: fadeInRight 300ms ease 0.3s both;
 }
 
-@keyframes fadeInDownTitle {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     -ms-transform: translateY(-60px);
@@ -118,5 +118,13 @@
 }
 
 .fadeInDownTitle {
-  animation: fadeInDownTitle 300ms ease;
+  animation: fadeInDown 300ms ease 0.4s both;
+}
+
+.fadeInDownText {
+  animation: fadeInDown 300ms ease 0.6s both;
+}
+
+.fadeInDownBlock {
+  animation: fadeInDown 400ms ease 0.6s both;
 }
