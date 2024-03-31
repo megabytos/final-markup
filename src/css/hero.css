@@ -179,8 +179,11 @@
 .hero-button {
   border-radius: 12px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  width: 100%;
+  max-width: 100%;
   height: 52px;
 
   font-weight: 700;
@@ -188,6 +191,7 @@
   line-height: 1.71em;
   color: var(--secondary-color);
   background-color: var(--button-background);
+  transition: background-color 0.3s ease;
 }
 
 .hero-button:hover,
@@ -213,12 +217,16 @@
 
 .hero-scroll-button {
   border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 38px;
   height: 38px;
   background-color: var(--secondary-color);
   --svg-color: #4dc274;
   position: absolute;
+  transition: background-color 0.3s ease, --svg-color 0.3s ease;
   bottom: 20px;
   right: 15px;
 }
