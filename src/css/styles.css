@@ -1,6 +1,7 @@
 @import url('./variables.css');
 @import url('./reset.css');
 @import url('./main.css');
+@import url('./animation.css');
 @import url('./header.css');
 @import url('./footer.css');
 @import url('./hero.css');
@@ -10,3 +11,4 @@
 @import url('./teachers.css');
 @import url('./application.css');
 @import url('./reviews.css');
+@import url('./scroll-up.css');

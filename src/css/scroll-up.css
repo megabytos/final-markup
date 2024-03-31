@@ -1,0 +1,49 @@
+.progress {
+  position: fixed;
+  z-index: 99;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 0s;
+
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  box-shadow: 0px 0px 6px 2px rgba(183, 182, 182, 0.75);
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(183, 182, 182, 0.75);
+  -moz-box-shadow: 0px 0px 6px 2px rgba(183, 182, 182, 0.75);
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  z-index: 100;
+  background-color: var(--secondary-color);
+  color: var(--link-color);
+  transition: background-color, color;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.progress:is(:hover, :focus) .progress-bar {
+  background-color: var(--link-color);
+  color: var(--secondary-color);
+}
+
+.progress-icon {
+  fill: currentColor;
+}
