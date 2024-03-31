@@ -2,19 +2,26 @@
   <div class="container">
     <h2 class="section-title">Leave an <span class="section-title-extra">application</span></h2>
 
-    <p class="section-description">Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
+    <p class="section-description">Please use the form below to contact us. Enter your name, email, and message and
+      we'll get back to you shortly.</p>
 
     <div class="application">
       <div class="application-image">
-        <img
-          srcset="./images/application/application.jpg 1x, ./images/application/application@2x.jpg 2x"
-          src="./images/application/application.jpg"
-          alt="application"
-          height="392"
-          width="492" />
+        <picture>
+          <source
+            srcset="/images/application/avif/application_1x.avif 1x, /images/application/avif/application_2x.avif 2x"
+            type="image/avif" />
+          <source
+            srcset="/images/application/webp/application_1x.webp 1x, /images/application/webp/application_2x.webp 2x"
+            type="image/webp" />
+          <source srcset="/images/application/application.jpg 1x, /images/application/application@2x.jpg 2x"
+            type="image/img" />
+          <img src="/images/application/application.jpg " alt="application" width="492" height="492" loading="lazy" />
+        </picture>
 
         <p class="description">
-          <span class="number">1000</span> of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.
+          <span class="number">1000</span> of our online English language lessons! This journey has been full of
+          discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.
         </p>
       </div>
 
@@ -28,13 +35,15 @@
         <div class="form-group">
           <label class="label">Email</label>
 
-          <input type="email" name="email" class="form-input" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+          <input type="email" name="email" class="form-input" placeholder="Email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
         </div>
 
         <div class="form-group">
           <label class="label">Phone</label>
 
-          <input type="tel" name="phone" class="form-input" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+          <input type="tel" name="phone" class="form-input" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required />
         </div>
 
         <div class="form-group comment">
@@ -83,7 +92,8 @@
 
         <button type="submit" class="form-submit">Send</button>
 
-        <p class="message">By clicking on “Send” button, you agree to our <a href="#" class="link">Privacy Policy</a>, and allow Promodo to use this information for marketing purposes.</p>
+        <p class="message">By clicking on “Send” button, you agree to our <a href="#" class="link">Privacy Policy</a>,
+          and allow Promodo to use this information for marketing purposes.</p>
       </form>
     </div>
   </div>

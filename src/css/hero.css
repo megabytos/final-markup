@@ -3,7 +3,25 @@
   min-width: 280px;
   height: 620px;
   border-radius: 16px;
-  background-image: url(../images/hero/mob_block_1x.jpg);
+
+  background-image: image-set(
+    url('../images/hero/avif/mob_block_1x.avif') 1x,
+    url('../images/hero/avif/mob_block_2x.avif') 2x,
+    url('../images/hero/webp/mob_block_1x.webp') 1x,
+    url('../images/hero/webp/mob_block_2x.webp') 2x,
+    url('../images/hero/mob_block_1x.jpg') 1x,
+    url('../images/hero/mob_block_2x.jpg') 2x
+  );
+
+  background-image: -webkit-image-set(
+    url('../images/hero/avif/mob_block_1x.avif') 1x,
+    url('../images/hero/avif/mob_block_2x.avif') 2x,
+    url('../images/hero/webp/mob_block_1x.webp') 1x,
+    url('../images/hero/webp/mob_block_2x.webp') 2x,
+    url('../images/hero/mob_block_1x.jpg') 1x,
+    url('../images/hero/mob_block_2x.jpg') 2x
+  );
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,7 +42,17 @@
 
 @media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
   .hero-section .container {
-    background-image: url(../images/hero/mob_block_2x.jpg);
+    background-image: image-set(
+      url('../images/hero/avif/mob_block_2x.avif') 2x,
+      url('../images/hero/webp/mob_block_2x.webp') 2x,
+      url('../images/hero/mob_block_2x.jpg') 2x
+    );
+
+    background-image: -webkit-image-set(
+      url('../images/hero/avif/mob_block_2x.avif') 2x,
+      url('../images/hero/webp/mob_block_2x.webp') 2x,
+      url('../images/hero/mob_block_2x.jpg') 2x
+    );
   }
 }
 
@@ -33,13 +61,40 @@
     min-width: 704px;
     height: 857px;
     border-radius: 30px;
-    background-image: url(../images/hero/tab_block_1x.jpg);
+
+    background-image: image-set(
+      url('../images/hero/avif/tab_block_1x.avif') 1x,
+      url('../images/hero/avif/tab_block_2x.avif') 2x,
+      url('../images/hero/webp/tab_block_1x.webp') 1x,
+      url('../images/hero/webp/tab_block_2x.webp') 2x,
+      url('../images/hero/tab_block_1x.jpg') 1x,
+      url('../images/hero/tab_block_2x.jpg') 2x
+    );
+
+    background-image: -webkit-image-set(
+      url('../images/hero/avif/tab_block_1x.avif') 1x,
+      url('../images/hero/avif/tab_block_2x.avif') 2x,
+      url('../images/hero/webp/tab_block_1x.webp') 1x,
+      url('../images/hero/webp/tab_block_2x.webp') 2x,
+      url('../images/hero/tab_block_1x.jpg') 1x,
+      url('../images/hero/tab_block_2x.jpg') 2x
+    );
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section .container {
-    background-image: url(../images/hero/tab_block_2x.jpg);
+    background-image: image-set(
+      url('../images/hero/avif/tab_block_2x.avif') 2x,
+      url('../images/hero/webp/tab_block_2x.webp') 2x,
+      url('../images/hero/tab_block_2x.jpg') 2x
+    );
+
+    background-image: -webkit-image-set(
+      url('../images/hero/avif/tab_block_2x.avif') 2x,
+      url('../images/hero/webp/tab_block_2x.webp') 2x,
+      url('../images/hero/tab_block_2x.jpg') 2x
+    );
   }
 }
 
@@ -48,13 +103,39 @@
     padding: 0 64px;
     width: 1152px;
     height: 629px;
-    background-image: url(../images/hero/desktop_block_1x.jpg);
+    background-image: image-set(
+      url('../images/hero/avif/desktop_block_1x.avif') 1x,
+      url('../images/hero/avif/desktop_block_2x.avif') 2x,
+      url('../images/hero/webp/desktop_block_1x.webp') 1x,
+      url('../images/hero/webp/desktop_block_2x.webp') 2x,
+      url('../images/hero/desktop_block_1x.jpg') 1x,
+      url('../images/hero/desktop_block_2x.jpg') 2x
+    );
+
+    background-image: -webkit-image-set(
+      url('../images/hero/avif/desktop_block_1x.avif') 1x,
+      url('../images/hero/avif/desktop_block_2x.avif') 2x,
+      url('../images/hero/webp/desktop_block_1x.webp') 1x,
+      url('../images/hero/webp/desktop_block_2x.webp') 2x,
+      url('../images/hero/desktop_block_1x.jpg') 1x,
+      url('../images/hero/desktop_block_2x.jpg') 2x
+    );
   }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .hero-section .container {
-    background-image: url(../images/hero/desktop_block_2x.jpg);
+    background-image: image-set(
+      url('../images/hero/avif/desktop_block_2x.avif') 2x,
+      url('../images/hero/webp/desktop_block_2x.webp') 2x,
+      url('../images/hero/desktop_block_2x.jpg') 2x
+    );
+
+    background-image: -webkit-image-set(
+      url('../images/hero/avif/desktop_block_2x.avif') 2x,
+      url('../images/hero/webp/desktop_block_2x.webp') 2x,
+      url('../images/hero/desktop_block_2x.jpg') 2x
+    );
   }
 }
 
