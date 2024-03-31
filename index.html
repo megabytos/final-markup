@@ -18,7 +18,7 @@
   <meta name="robots" content="index,follow">
   <title>English Excellence</title>
   <script type="module" crossorigin src="/final-markup/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/final-markup/assets/index-2ae854ff.css">
+  <link rel="stylesheet" href="/final-markup/assets/index-a82d4e32.css">
 </head>
 
 <body>
@@ -170,6 +170,7 @@
       </h2>
       <div class="proposal-bg-bottom-card"></div>
       <div class="proposal-bg-mid-card"></div>
+      <div class="proposal-wrapper">
       <div class="proposal-main-card-container">
         <div class="proposal-left-container">
           <h3 class="proposal-small-title">Power of English</h3>
@@ -183,14 +184,19 @@
           </button>
         </div>
         <div class="proposal-right-container">
-          <img
-            srcset="/final-markup/assets/books_1x-0f69a680.png 1x, /final-markup/assets/books_2x-ceecc585.png 2x"
-            src="/final-markup/assets/books_1x-0f69a680.png"
-            alt="Stack of books"
-            class="proposal-features-img"
-          />
+          <picture class="proposal-features-img">
+            <source srcset="/final-markup/assets/books_1x-34dd35ea.avif 1x, /final-markup/assets/books_2x-21eb12b6.avif 2x"
+            type="image/avif" />
+            <source srcset="/final-markup/assets/books_1x-d00fea82.webp 1x, /final-markup/assets/books_2x-9b372a80.webp 2x"
+            type="image/webp" />
+            <source srcset="/images/proposal/books_1x.jpg 1x, /images/proposal/books_2x.jpg 2x"
+            type="image/img" />
+            <img class="proposal-features-img" src="/images/proposal/books_1x.jpg" alt="Stack of books" width="214"
+            height="263" loading="lazy" />
+          </picture>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </section>
