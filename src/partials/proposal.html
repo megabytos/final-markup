@@ -6,6 +6,7 @@
       </h2>
       <div class="proposal-bg-bottom-card"></div>
       <div class="proposal-bg-mid-card"></div>
+      <div class="proposal-wrapper">
       <div class="proposal-main-card-container">
         <div class="proposal-left-container">
           <h3 class="proposal-small-title">Power of English</h3>
@@ -19,14 +20,19 @@
           </button>
         </div>
         <div class="proposal-right-container">
-          <img
-            srcset="/images/proposal/books_1x.png 1x, /images/proposal/books_2x.png 2x"
-            src="/images/proposal/books_1x.png"
-            alt="Stack of books"
-            class="proposal-features-img"
-          />
+          <picture class="proposal-features-img">
+            <source srcset="/images/proposal/avif/books_1x.avif 1x, /images/proposal/avif/books_2x.avif 2x"
+            type="image/avif" />
+            <source srcset="/images/proposal/webp/books_1x.webp 1x, /images/proposal/webp/books_2x.webp 2x"
+            type="image/webp" />
+            <source srcset="/images/proposal/books_1x.jpg 1x, /images/proposal/books_2x.jpg 2x"
+            type="image/img" />
+            <img class="proposal-features-img" src="/images/proposal/books_1x.jpg" alt="Stack of books" width="214"
+            height="263" loading="lazy" />
+          </picture>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </section>
