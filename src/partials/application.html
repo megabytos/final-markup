@@ -25,7 +25,7 @@
         </p>
       </div>
 
-      <form name="application_form" autocomplete="off" novalidate class="application-form">
+      <form name="application_form" autocomplete="off" class="application-form">
         <div class="form-group">
           <label class="label">Name</label>
 
@@ -42,7 +42,7 @@
         <div class="form-group">
           <label class="label">Phone</label>
 
-          <input type="tel" name="phone" class="form-input" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          <input type="tel" name="phone" class="form-input" placeholder="Phone" pattern="[0-9\-\+]{9,15}"
             required />
         </div>
 
@@ -57,7 +57,7 @@
 
           <div class="radiobuttons">
             <div class="option">
-              <input type="radio" name="teacher" class="radiobutton" id="teacher-1" required />
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-1" value="Maria" required />
 
               <label for="teacher-1" class="radio-label"></label>
 
@@ -65,7 +65,7 @@
             </div>
 
             <div class="option">
-              <input type="radio" name="teacher" class="radiobutton" id="teacher-2" required />
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-2" value="Artem" required />
 
               <label for="teacher-2" class="radio-label"></label>
 
@@ -73,7 +73,7 @@
             </div>
 
             <div class="option">
-              <input type="radio" name="teacher" class="radiobutton" id="teacher-3" required />
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-3" value="Ilona" required />
 
               <label for="teacher-3" class="radio-label"></label>
 
@@ -81,7 +81,7 @@
             </div>
 
             <div class="option">
-              <input type="radio" name="teacher" class="radiobutton" id="teacher-4" required />
+              <input type="radio" name="teacher" class="radiobutton" id="teacher-4" value="Volodymyr" required />
 
               <label for="teacher-4" class="radio-label"></label>
 
