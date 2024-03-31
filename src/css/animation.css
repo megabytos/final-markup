@@ -128,3 +128,36 @@
 .fadeInDownBlock {
   animation: fadeInDown 400ms ease 0.6s both;
 }
+
+@keyframes fadeInDownItems {
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-80px);
+    transform: translateY(-80px);
+  }
+  25% {
+    opacity: 0.25;
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+  50% {
+    opacity: 0.5;
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  75% {
+    opacity: 0.75;
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDownItems {
+  animation: fadeInDownItems 500ms ease 0.7s both;
+}
