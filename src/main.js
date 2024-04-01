@@ -1,4 +1,5 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+import WOW from './js/WOW'
 
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
@@ -97,3 +98,5 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+new WOW().init();

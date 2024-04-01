@@ -3,8 +3,8 @@
   z-index: 99;
   bottom: 50px;
   right: 50px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   display: none;
   justify-content: center;
   align-items: center;
@@ -29,8 +29,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  height: calc(100% - 12px);
-  width: calc(100% - 12px);
+  height: calc(100% - 9px);
+  width: calc(100% - 9px);
   z-index: 100;
   background-color: var(--secondary-color);
   color: var(--link-color);
@@ -46,4 +46,16 @@
 
 .progress-icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 1280px) {
+  .progress {
+    width: 60px;
+    height: 60px;
+  }
+
+  .progress-bar {
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+  }
 }
