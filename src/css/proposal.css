@@ -330,17 +330,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .proposal-main-btn {
-    height: 60px;
-    min-width: 306px;
-    font-size: 18px;
-  }
+    .proposal-main-btn {        
+        height: 60px;
+        max-width: 306px;        
+    }
 }
 
 @media screen and (min-width: 1280px) {
-  .proposal-main-btn {
-    margin-left: 64px;
-    height: 60px;
-    font-size: 18px;
-  }
+    .proposal-main-btn {
+        margin-left: 64px;        
+    }
 }
+

@@ -241,9 +241,14 @@
 
 .icon-arrow {
   display: block;
-  width: 12px;
-  height: 7px;
-  margin: 22px auto;
+  width: 14px;
+  height: 8px;
+  margin: 2px 0 0 0;  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .icon-arrow:hover use,
@@ -251,10 +256,3 @@
   fill: var(--secondary-color);
 }
 
-@media screen and (min-width: 768px) {
-  .icon-arrow {
-    width: 14px;
-    height: 8px;
-    margin: 23px auto;
-  }
-}
